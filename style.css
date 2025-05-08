@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: 'Fira Code', monospace;
+    color: #d4d4d4;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+.window {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.title-bar {
+    background-color: #2d2d2d;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.filename {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c5c5c5;
+    font-size: 0.9rem;
+}
+
+.file-tabs {
+    display: flex;
+    gap: 0.75rem;
+    background-color: #252526;
+    padding: 0.3rem 1rem;
+    border-bottom: 1px solid #333;
+    color: #9cdcfe;
+}
+
+.file-tabs a:link, 
+.file-tabs a:visited {
+    color: #9cdcfe;
+    text-decoration: none;
+}
+
+.file-tabs a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+}
+
+.file-tabs a:active {
+    background-color: white;
+}
+
+.code-area {
+    padding: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    display: flex;
+}
+
+.right {
+    margin-top: 2.77vh;
+    margin-left: 3vh;
+    white-space: pre-wrap;
+}
+
+.left {
+    line-height: 2.12;
+    opacity: 0.3;
+}
+
+.tag { color: #d19a66; }
+.attr { color: #9cdcfe; }
+.value { color: #ce9178; }
+.text { color: #d4d4d4; }
+
+.profile-pic {
+    position: absolute;
+    height: 200px;
+    top: 22.5%;
+    left: 16%;
+}
+
+.right a {
+    transform: scale(1.05);
+    color: #9cdcfe;
+}
+
+.right a:hover {
+    transform: scale(1.05);
+    color: #fafdff;
+}

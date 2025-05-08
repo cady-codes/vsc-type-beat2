@@ -74,10 +74,6 @@ body {
     background-color: rgb(55, 55, 55);
 }
 
-.file-tabs a:active {
-    background-color: white;
-}
-
 .code-area {
     padding: 1rem;
     font-size: 0.95rem;
